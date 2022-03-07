@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    h1 {
+             font-family: 'Times New Roman', Times, serif;
+             color: cyan;
+        }
+        label{
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            color:cadetblue;
+        }
+        .tamaño-imagen {
+            width: 200px;
+            height: 200px;
+        }
+        p{
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            color:cadetblue;
+        }
+</style>
+<body>
+    <div align="left">
+        <a href="Pasteleteria.html">Inicio</a>
+        <a href="FormularioPasteleria.html">Haz tu pedido</a>
+        <a href="Pastelero.html">Lista de Pedidos</a>
+        </div>
+
+        <div align="center"><img class="tamaño-imagen" src="Pasteleteria.png" alt="Logo pastel" border="0"></div>
+        <h1 align="center">Crea tu propio pastel a tu gusto </h1>
+        <div align="center">
+            <label for="Input1"> Nombre Completo</label>
+            <br>
+            <input type="text" placeholder="Ingresa tu nombre completo" id="Input1" name="Input1"><br><br>
+
+            <label for="correo1">Correo electronico</label><br>
+            <input type="email" placeholder="Ejemplo@hotmail.com" id="correo1" name="correo1"><br><br>
+
+            <label for="numero1">Cuantos pasteles</label><br>
+            <input type="number" placeholder="Cantidad" id="numero1" name="numero1"><br><br>
+
+            <label for="tel1">Numero de telefono</label><br>
+            <input type="tel" placeholder="Telefono a 10 Digitos" id="tel1" name="tel1" maxlength="10"><br><br>
+
+            <label for="fecha1">Ingresa la fecha a entregar</label><br>
+            <input type="date" id="fecha1" name="fecha1"><br>
+
+
+            <label for="Sabor">Escoge el sabor de tu pastel o combinalo a tu gusto(Los pasteles combinados tienen un precio distinto)</label><br>
+            <input type="checkbox" id="toppingpastel1" name="toppingpastel1" value="Pastel Chocolate">
+            <label for="toppingpastel1">pastel de chocolate ($300 grande)</label><br>
+            <input type="checkbox" id="toppingpastel2" name="toppingpastel2" value="Pastel Tiramisu">
+            <label for="toppingpastel2">pastel de Tiramisu ($320 Grande)</label><br>
+            <input type="checkbox" id="toppingpastel3" name="toppingpastel3" value="Pastel Nutella">
+            <label for="toppingpastel3">pastel de Nutella ($350 Grande)</label><br>
+            <input type="checkbox" id="toppingpastel4" name="toppingpastel4" value="Paste Cajeta">
+            <label for="toppingpastel4">pastel de cajeta ($310 Grande)</label><br><br>
+            
+
+            <label for="Decoracion">Escoge tu decoración preferida o combinalas a tu gusto :) </label><br>
+            <input type="checkbox" id="topping1" name="topping1" value="Malvaviscos">
+            <label for="topping1">Malvaviscos ($70)</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Galleta Oreo">
+            <label for="topping2">Galletas Oreo($90)</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Fresas">
+            <label for="topping3">Fresas($70)</label><br>
+            <input type="checkbox" id="topping4" name="topping4" value="Crema Batida">
+            <label for="topping4">Buttercream ($120)</label><br><br>
+
+    
+
+            <label for="Input2"> Ingresa tu dirección</label><br>
+            <input type="text" placeholder="Calle y numero" id="Input2" name="Input2"><br><br>
+
+            <label for="Input2"> Informacion adicional</label><br>
+            <input type="text" placeholder="Datos o detalles extras" id="Input2" name="Input2"><br><br>
+
+            <input type="button" id="boton1" name="boton1" value="Enviar pedido"
+                onclick="alert('Se ha enviado el pedido');"><br><br>
+            <input type="reset"><br>
+            
+        </div>
+        <div align="center">
+            <footer>
+            <p>Contacto: 
+                Tel: 9981086595
+                Correo: pasteleteria@outlook.com
+                Facebook: Pasteleteria
+            </p>
+            </footer>
+        </div>
+</body>
